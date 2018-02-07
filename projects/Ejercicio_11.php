@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" /> 
-    <title>Notas</title> 
+    <title>Monedas</title> 
 </head> 
 <body>
 
