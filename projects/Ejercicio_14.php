@@ -22,7 +22,6 @@
 
 <?php
 
-
 if(!empty($_POST["nota"])) {
     if($_POST["nota"]>=0 && $_POST["nota"]<5) {
         echo "Insuficiente";    
@@ -45,3 +44,9 @@ if(!empty($_POST["nota"])) {
     echo "</br>";
     echo "Nota: ".$_POST["nota"];
 }
+
+
+?>
+
+</body> 
+</html>
