@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" /> 
-    <title>Monedas</title> 
+    <title>Dados</title> 
 </head> 
 <body>
 
@@ -67,13 +67,6 @@ for($x = 0; $x < $numero_dados; $x++) {
         print "<img src=\"dado/6.png\">";
     }
 
-    
-    
-    /*if( ($monedas[$x] == 0) && ($tipo_monedas == 1 ) {
-        print "<img src=\"fotos/cruzdolar.JPG\">";
-    } else {
-        print "<img src=\"fotos/caradolar.jpg\">";
-    }*/
 }
 
 

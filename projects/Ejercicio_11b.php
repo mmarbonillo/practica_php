@@ -65,46 +65,29 @@ for($i = 0; $i < $numero_monedas; $i++) {
 }
 print_r($monedas);
 
-//Le indicamos que, si el valor de la posición ($x) del array ($monedas) es 0, nos muestre la cara; en caso contrario (que sea 1) nos mostrará cruz
-for($x = 0; $x < $numero_monedas; $x++) {
-    if( $monedas[$x] == 0) {
-        if($tipo_monedas == 1){
-            print "<img src=\"fotos/dolar1.jpeg\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 2) {
-            print "<img src=\"fotos/cara.gif\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 3) {
-            print "<img src=\"fotos/yenfront.jpg\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 4) {
-            print "<img src=\"fotos/librafront.jpg\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 5) {
-            print "<img src=\"fotos/francofront.jpg\" width=\"200\ height\"200\">";
-        } 
+
+    $images = array();
+    $images["1"]["cara"] = "fotos/dolar1.jpeg";
+    $images["1"]["cruz"] = "fotos/dolar2.jpg";
+    $images["2"]["cara"] = "fotos/cara.gif";
+    $images["2"]["cruz"] = "fotos/cruz.gif";
+    $images["3"]["cara"] = "fotos/yenfront.jpg";
+    $images["3"]["cruz"] = "fotos/yenbehind.jpg";
+    $images["4"]["cara"] = "fotos/librafront.jpg";
+    $images["4"]["cruz"] = "fotos/librabehind.jpg";
+    $images["5"]["cara"] = "fotos/francofront.jpg";
+    $images["5"]["cruz"] = "fotos/francobehind.jpg";
 
 
-    } else {
-        if($tipo_monedas == 1){
-            print "<img src=\"fotos/dolar2.jpg\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 2) {
-            print "<img src=\"fotos/cruz.gif\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 3) {
-            print "<img src=\"fotos/yenbehind.jpg\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 4) {
-            print "<img src=\"fotos/librabehind.jpg\" width=\"200\ height\"200\">";
-        } elseif ($tipo_monedas == 5) {
-            print "<img src=\"fotos/francobehind.jpg\" width=\"200\ height\"200\">";
+    for($x = 0; $x < $numero_monedas; $x++) {
+        if($monedas[$x] == 0) {
+            echo "<img src=\"".$images[$tipo_monedas]["cara"]."\" width=\"200\" height\"200\">";
+        } else {
+            echo "<img src=\"".$images[$tipo_monedas]["cruz"]."\" width=\"200\" height\"200\">";
         }
+        echo "<br/>";
+        echo "<br/>";
     }
-
-/*
-    if( ($monedas[$x] == 0) && ($tipo_monedas == 1 ) {
-        print "<img src=\"fotos/cruzdolar.JPG\">";
-    } else {
-        print "<img src=\"fotos/caradolar.jpg\">";
-    }
-
-*/
-}
-
 
 ?>
 
