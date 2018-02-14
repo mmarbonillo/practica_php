@@ -48,7 +48,7 @@ echo "<br/>";
 
 $temp = 0.0;
 
-/*
+
 //MEDIA
 for ($i = 0; $i < $numero_tmp; $i++) {
     $temp = $temp + $temperaturas[$i];
@@ -57,7 +57,7 @@ for ($i = 0; $i < $numero_tmp; $i++) {
 $media = $temp / $numero_tmp;
 
 print_r($media);
-*/
+
 
 
 /*
@@ -67,7 +67,7 @@ for ($i = 0; $i < $numero_tmp; $i++) {
 }
 
 print_r($maxima);
-*/
+
 
 
 //VALOR MINIMO
@@ -77,7 +77,7 @@ for ($i = 0; $i < $numero_tmp; $i++) {
 }
 
 print_r($minima);
-
+*/
 ?>
 
 </body> 
