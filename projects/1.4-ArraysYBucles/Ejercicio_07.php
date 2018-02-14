@@ -52,7 +52,7 @@ echo "<br/>";
 echo "<br/>";
 
 
-//Ordeno el array de mayor a menor
+//Ordeno el array de menor a mayor. La orden sobreescribe el anterior array dejando $temperaturas ordenado.
 rsort($temperaturas);
 
 print_r($temperaturas);
@@ -69,14 +69,13 @@ echo "<br/>";
 echo "<br/>";
 
 
-//Ordeno el array de menor a mayor. La orden sobreescribe el anterior array dejando $temperaturas ordenado.
+//De menor a mayor
 sort($temperaturas);
 
 print_r($temperaturas);
 echo "<br/>";
 echo "<br/>";
 
-//Recorro el array ya ordenado para mostrarlo
 echo "Array ordenado de menor a mayor: ";
 for($i = 0; $i < $numero_tmp; $i++) {
     echo " $temperaturas[$i]";
