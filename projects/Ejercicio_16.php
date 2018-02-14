@@ -48,6 +48,8 @@ echo "<br/>";
 
 $temp = 0.0;
 
+/*
+//MEDIA
 for ($i = 0; $i < $numero_tmp; $i++) {
     $temp = $temp + $temperaturas[$i];
 }
@@ -55,7 +57,26 @@ for ($i = 0; $i < $numero_tmp; $i++) {
 $media = $temp / $numero_tmp;
 
 print_r($media);
+*/
 
+
+/*
+//VALOR MAXIMO
+for ($i = 0; $i < $numero_tmp; $i++) {
+    $maxima = max($temperaturas);
+}
+
+print_r($maxima);
+*/
+
+
+//VALOR MINIMO
+
+for ($i = 0; $i < $numero_tmp; $i++) {
+    $minima = min($temperaturas);
+}
+
+print_r($minima);
 
 ?>
 
