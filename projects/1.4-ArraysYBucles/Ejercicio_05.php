@@ -52,7 +52,6 @@ $temp = 0.0;
 //MEDIA
 $i = 0;
 
-/*
 while ($i < $numero_tmp) {
     $temp = $temp + $temperaturas[$i];
     $i++;
@@ -61,7 +60,7 @@ while ($i < $numero_tmp) {
 $media = $temp / $numero_tmp;
 
 print_r($media);
-*/
+
 
 
 /*
@@ -73,7 +72,7 @@ while ($i < $numero_tmp) {
 }
 
 print_r($maxima);
-*/
+
 
 
 //VALOR MINIMO
@@ -84,7 +83,7 @@ while ($i < $numero_tmp) {
 }
 
 print_r($minima);
-
+*/
 
 ?>
 
