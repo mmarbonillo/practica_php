@@ -46,7 +46,7 @@ print_r($temperaturas);
 echo "<br/>";
 echo "<br/>";
 
-/*
+
 $temp = 0.0;
 
 
@@ -64,12 +64,12 @@ echo "<br/>";
 $media = $temp / $numero_tmp;
 
 print_r($media);
-*/
 
 
-/*
+
+
 //TEMP MAXIMA
-
+/*
 $temp = array();
 $cont = 0;
 foreach ($temperaturas as &$valor) {
@@ -84,7 +84,12 @@ echo "<br/>";
 $maximo = max($temp);
 
 print_r($maximo);
+
 */
+
+
+
+/*
 //TEMP MINIMA
 
 $temp = array();
@@ -101,6 +106,7 @@ echo "<br/>";
 $minimo = min($temp);
 
 print_r($minimo);
+*/
 
 
 

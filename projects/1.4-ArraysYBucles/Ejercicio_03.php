@@ -48,7 +48,7 @@ echo "<br/>";
 
 $temp = 0.0;
 
-
+/*
 //MEDIA
 for ($i = 0; $i < $numero_tmp; $i++) {
     $temp = $temp + $temperaturas[$i];
@@ -60,16 +60,31 @@ print_r($media);
 
 
 
-/*
+
 //VALOR MAXIMO
 for ($i = 0; $i < $numero_tmp; $i++) {
     $maxima = max($temperaturas);
 }
 
 print_r($maxima);
+*/
+/*
 
+$maximo = $temperaturas[0];
 
+for($x = 0; $x < $numero_tmp; $x++) {
+    if($maximo < $temperaturas[$x]) {
+        $maximo = $temperaturas[$x];
+    }
+}
 
+echo "<h4>Máximo: $maximo</h4>";
+echo "<br/>";
+echo "<br/>";
+
+*/
+
+/*
 //VALOR MINIMO
 
 for ($i = 0; $i < $numero_tmp; $i++) {
@@ -78,6 +93,18 @@ for ($i = 0; $i < $numero_tmp; $i++) {
 
 print_r($minima);
 */
+
+
+$minima = $temperaturas[0];
+
+for($y = 1; $y < $numero_tmp; $y++) {
+    if($minima > $temperaturas[$y]) {
+        $minima = $temperaturas[$y];
+    }
+}
+
+echo "<h4>Mínimo: $minima</h4>";
+
 ?>
 
 </body> 
