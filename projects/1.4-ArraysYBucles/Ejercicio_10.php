@@ -13,6 +13,7 @@ $lista = array("Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussel
 $long = count($lista);
 
 //Ordeno el array ascendentemente por clave
+$orden = array();
 $orden = ksort($lista);
 
 /*
@@ -22,7 +23,7 @@ foreach ($lista as $clave => $valor) {
 }
 */
 
-json_encode($orden);
+echo json_encode($orden);
 
 
 ?>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" /> 
-    <title>Monedas</title> 
+    <title>While</title> 
 </head> 
 <body>
 
@@ -38,8 +38,10 @@ echo "<br/>";
 $temperaturas = array();
 
 //Le damos un valor a cada posicion del array
-for($i = 0; $i < $numero_tmp; $i++) {
+$i = 0;
+while ($i < $numero_tmp) {
     $temperaturas[$i] = rand(1, 30);
+    $i++;
 }
 
 print_r($temperaturas);
@@ -47,43 +49,46 @@ echo "<br/>";
 echo "<br/>";
 
 $temp = 0.0;
-
+$x = 0;
 
 //MEDIA
-$i = 0;
 
-while ($i < $numero_tmp) {
-    $temp = $temp + $temperaturas[$i];
-    $i++;
+while ($x < $numero_tmp) {
+    $temp = $temp + $temperaturas[$x];
+    $x++;
 }
 
 $media = $temp / $numero_tmp;
 
-print_r($media);
+echo "<h4>Media: $media</h4>";
 
 
 
-/*
 //VALOR MAXIMO
+$y = 0;
+$maximo = $temperaturas[0];
 
-while ($i < $numero_tmp) {
-    $maxima = max($temperaturas);
-    $i++;
+while ($y < $numero_tmp) {
+    if($maximo < $temperaturas[$y]) {
+        $maximo = $temperaturas[$y];
+    }
+    $y++;
 }
-
-print_r($maxima);
-
+echo "<h4>Máximo: $maximo</h4>";
 
 
 //VALOR MINIMO
+$z = 0;
+$minima = $temperaturas[0];
 
-while ($i < $numero_tmp) {
-    $minima = min($temperaturas);
-    $i++;
+while ($z < $numero_tmp) {
+    if($minima > $temperaturas[$z]) {
+        $minima = $temperaturas[$z];
+    }
+    $z++;
 }
+echo "<h4>Mínimo: $minima</h4>";
 
-print_r($minima);
-*/
 
 ?>
 

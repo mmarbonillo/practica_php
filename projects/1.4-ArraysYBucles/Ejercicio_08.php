@@ -20,9 +20,9 @@ echo "<br/>";
 echo "<br/>";
 
 //Recorro el array ya ordenado para mostrarlo
-echo "Array ordenado de menor a mayor por valor: <br/>";
-foreach ($lista as $clave => $valor) {
-    echo "$clave = $valor <br/>";
+echo "ASORT - Array ordenado de menor a mayor por valor: <br/>";
+foreach ($lista as $nombre => $edad) {
+    echo "$nombre = $edad <br/>";
 }
 echo "<br/>";
 echo "<br/>";
@@ -38,9 +38,9 @@ echo "<br/>";
 echo "<br/>";
 
 //Recorro el array ya ordenado para mostrarlo
-echo "Array ordenado de menor a mayor por clave: <br/>";
-foreach ($lista as $clave => $valor) {
-    echo "$clave = $valor <br/>";
+echo "KSORT - Array ordenado de menor a mayor por clave: <br/>";
+foreach ($lista as $nombre => $edad) {
+    echo "$nombre = $edad <br/>";
 }
 echo "<br/>";
 echo "<br/>";
@@ -52,14 +52,17 @@ echo "<br/>";
 //Ordeno el array descendentemente por valor
 arsort($lista);
 
+echo json_encode($lista);
+echo "<br/>";
+echo "<br/>";
 print_r($lista);
 echo "<br/>";
 echo "<br/>";
 
 //Recorro el array ya ordenado para mostrarlo
-echo "Array ordenado de mayor a menor por valor: <br/>";
-foreach ($lista as $clave => $valor) {
-    echo "$clave = $valor <br/>";
+echo "ASORT - Array ordenado de mayor a menor por valor: <br/>";
+foreach ($lista as $nombre => $edad) {
+    echo "$nombre = $edad <br/>";
 }
 echo "<br/>";
 echo "<br/>";
@@ -76,9 +79,9 @@ echo "<br/>";
 echo "<br/>";
 
 //Recorro el array ya ordenado para mostrarlo
-echo "Array ordenado de mayor a menor por clave: <br/>";
-foreach ($lista as $clave => $valor) {
-    echo "$clave = $valor <br/>";
+echo "KRSORT - Array ordenado de mayor a menor por clave: <br/>";
+foreach ($lista as $nombre => $edad) {
+    echo "$nombre = $edad <br/>";
 }
 echo "<br/>";
 echo "<br/>";

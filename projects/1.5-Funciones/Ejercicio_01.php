@@ -20,7 +20,11 @@
 
 
 <?php
+$numero = $_POST["numero"];
 
+echo "Tabla del $numero";
+echo "<br/>";
+echo "<br/>";
 function multiplicar($num) {
     for($i = 1; $i <=10; $i++) {
         $resultado = $num * $i;
@@ -35,7 +39,7 @@ function multiplicar($num) {
     }
 }
 
-multiplicar($_POST["numero"]);
+multiplicar($numero);
 
 
 ?>
