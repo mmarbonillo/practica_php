@@ -58,6 +58,15 @@ $listaA = inicializar_array($num_elem, $minimo, $maximo);
 echo "<pre>";
 print_r($listaA);
 echo "</pre>";
+
+
+$listaB = inicializar_array(5, 1, 50);
+
+echo "<pre>";
+print_r($listaB);
+echo "</pre>";
+
+
 ?>
 
 </body> 
