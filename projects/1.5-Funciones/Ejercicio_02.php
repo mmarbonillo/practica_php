@@ -53,7 +53,8 @@ function inicializar_array($num_elem, $minimo, $maximo){
 
 $listaA = inicializar_array($num_elem, $minimo, $maximo);
 
-
+//ECHO no devuelve arrays, solo strings.
+//Para devolver arrays usamos print_r
 echo "<pre>";
 print_r($listaA);
 echo "</pre>";
