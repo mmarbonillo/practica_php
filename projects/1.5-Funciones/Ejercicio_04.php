@@ -54,9 +54,9 @@ function inicializar_array($num_elem, $minimo, $maximo){
 
 
 function calcular_maximo($numeros) {
-    $max = 0;
+    $max = $numeros[0];
     $numero_elementos = count($numeros);
-    for ($i = 0; $i < $numero_elementos; $i++) {
+    for ($i = 1; $i < $numero_elementos; $i++) {
         if ($max < $numeros[$i]) {
             $max = $numeros[$i];
         }

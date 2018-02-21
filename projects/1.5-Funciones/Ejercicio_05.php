@@ -47,16 +47,16 @@ $maximo = $_POST["max"];
 function inicializar_array($num_elem, $minimo, $maximo){
     $numeros = array();
     for($i = 0; $i < $num_elem; $i++) {
-        $numeros[$i] = rand (1, 50);
+        $numeros[$i] = rand ($minimo, $maximo);
     }
     return $numeros;
 }
 
 
 function calcular_minimo($numeros) {
-    $min = 0;
+    $min = $numeros[0];
     $numero_elementos = count($numeros);
-    for ($i = 0; $i < $numero_elementos; $i++) {
+    for ($i = 1; $i < $numero_elementos; $i++) {
         if ($min > $numeros[$i]) {
             $min = $numeros[$i];
         }
@@ -64,7 +64,7 @@ function calcular_minimo($numeros) {
     return $min;
 }
 
-$numeros =inicializar_array($num_elem, $minimo, $maximo);
+$numeros = inicializar_array($num_elem, $minimo, $maximo);
 $valor_min = calcular_minimo($numeros);
 print_r($numeros);
 print_r($valor_min);
