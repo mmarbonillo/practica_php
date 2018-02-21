@@ -53,21 +53,21 @@ function inicializar_array($num_elem, $minimo, $maximo){
 }
 
 
-function calcular_maximo($numeros) {
-    $max = 0;
+function calcular_minimo($numeros) {
+    $min = 0;
     $numero_elementos = count($numeros);
     for ($i = 0; $i < $numero_elementos; $i++) {
-        if ($max < $numeros[$i]) {
-            $max = $numeros[$i];
+        if ($min > $numeros[$i]) {
+            $min = $numeros[$i];
         }
     }
-    return $max;
+    return $min;
 }
 
 $numeros =inicializar_array($num_elem, $minimo, $maximo);
-$max = calcular_maximo($numeros);
+$valor_min = calcular_minimo($numeros);
 print_r($numeros);
-print_r($max);
+print_r($valor_min);
 
 
 ?>
