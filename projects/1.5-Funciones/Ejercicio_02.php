@@ -9,7 +9,7 @@
 <form method="post">
 
 <div>
-<label for="numero_de_elementos">Número de temperaturass:</label>
+<label for="numero_de_elementos">Número de elementos:</label>
     <select name="numero_de_elementos">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -42,18 +42,21 @@
 $num_elem = $_POST["numero_de_elementos"];
 $minimo = $_POST["min"];
 $maximo = $_POST["max"];
-$array = array();
 
-function inicializar_array(){
+function inicializar_array($num_elem, $minimo, $maximo){
+    $lista = array();
     for($i = 0; $i < $num_elem; $i++) {
-        $array[$i] = rand ($minimo, $maximo);
+        $lista[$i] = rand ($minimo, $maximo);
     }
-    return $array;
-    print_r($array);
+    return $lista;
 }
 
-inicializar_array();
+$listaA = inicializar_array($num_elem, $minimo, $maximo);
 
+
+echo "<pre>";
+print_r($listaA);
+echo "</pre>";
 ?>
 
 </body> 
